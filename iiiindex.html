@@ -169,22 +169,36 @@
     </style>
 
     <script>
-  var myFirstVariabloe = 0;
+  var myFirstVariable = 0;
   var mySecondVariable = 0;
   var myThirdVariable = 0;
 
       function showCountA() {
 
- = "You have clicked " + numClicks + " times!";
+        document.getElementById("buttonOne").innerHTML = myFirstVariable ;
+      }
+  function showCountB() {
 
+        document.getElementById("buttonFive").innerHTML = mySecondVariable ;
+      }
+          function showCountC() {
+
+        document.getElementById("buttonNine").innerHTML = myThirdVariable ;
+      }
+          
 }
       function mySecondFunction() {
-          mySecondVariable = myFirstVariable + 1;
+          myFirstVariable = myFirstVariable + 1;
       }
 
       function myFourthFunction() {
              myFirstVariable = myFirstVariable * 10  ;
       }
+        function myThirdFunction() {
+                 myFirstVariable = myFirstVariable + 1;
+             mySecondVariable = mySecondVariable + 1;
+             myThirdVariable = myThirdVariable + 1;
+        }
       function mySixthFunction() {
              mySecondVariable = mySecondVariable + 1  ;
       }
@@ -193,15 +207,61 @@
       }
         function mySeventhFunction() {
              mySecondVariable = mySecondhVariable * 2  ;
+             myThirdVariable = myThirdVariable * 2 ;
+              myFirstVariable = myFirstVariable * 2 ;
       }
+        function myEigthFunction() {
+                 mySecondVariable = 0  ;
+             myThirdVariable = 0 ;
+              myFirstVariable = 0 ;
+        }
         function myEleventhFunction() {
-             myThirdVariable = myThirdVariable / 2  ;
+             myThirdVariable = myThirdVariable / 2 ;
+              mySecondVariable = mySecondVariable / 2 ;
+              myFirstVariable = myFirstVariable / 2 ;
       }
-      
+
+        function ButtonTwo() {
+                    document.getElementById("buttonTwo").innerHTML = "Add One to A"; 
+        }
+           function ButtonThree() {
+                    document.getElementById("buttonThree").innerHTML = "Add One to A"; 
+        }
+           function ButtonFour() {
+                    document.getElementById("buttonFour").innerHTML = "Add One to A"; 
+        }
+           function ButtonFive() {
+                    document.getElementById("buttonFive").innerHTML = "Add One to A"; 
+        }
+           function ButtonSix() {
+                    document.getElementById("buttonSix").innerHTML = "Add One to A"; 
+        }
+           function ButtonSeven() {
+                    document.getElementById("buttonSeven").innerHTML = "Add One to A"; 
+        }
+           function ButtonEight() {
+                    document.getElementById("buttonEight").innerHTML = "Add One to A"; 
+        }
+        
+           function ButtonNine() {
+                    document.getElementById("buttonNine").innerHTML = "Add One to A"; 
+        }
+           function ButtonTen() {
+                    document.getElementById("buttonTen").innerHTML = "Add One to A"; 
+        }
+           function ButtonEleven() {
+                    document.getElementById("buttonEleven").innerHTML = "Add One to A"; 
+        }
+        
+           function ButtonTwelve() {
+                    document.getElementById("buttonTwelve").innerHTML = "Add One to A"; 
+        }
+        
     </script>
 </head>
 
 <body>
+    
     <div class="title">
          TRIPLE NUMBER TRACKER
 
@@ -219,7 +279,9 @@
 
 
     <div class="button1"  onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-       <button class="displayButton">
+       <button id="button1">
+           
+        
        
 
        </button> 
@@ -233,7 +295,7 @@
 
     <div class="button3"  onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
         <button>
-
+        <button id = "buttonThree" onclick= "myThirdFunction();"> Increment All
 
         </button>
 
@@ -250,7 +312,7 @@
    
     
     <div class="button5" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button class="displayButton">
+        <button id = "buttonFive">
     
 
         </button>
@@ -264,21 +326,21 @@
 
     </div>
     <div class="button7" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-      <button id= "buttonSeven" onclick ="mySeventhFunction();"> Double B
+      <button id= "buttonSeven" onclick ="mySeventhFunction();"> Double All
 
 
         </button>
 
     </div>
     <div class="button8" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button>
+        <button id= "buttonEight" onclick ="myEigthFunction();"> Reset All
 
 
         </button>
 
     </div>
     <div class="button9" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button  class="displayButton">
+        <button  class="displayButton" button id= "buttonEleven"> 
 
 
         </button>
@@ -292,7 +354,7 @@
 
     </div>
     <div class="button11" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-       <button id= "buttonEleven" onclick ="myEleventhFunction();"> Halve C
+       <button id= "buttonEleven" onclick ="myEleventhFunction();"> Halve All
 
         </button>
 
@@ -306,6 +368,7 @@
     </div>
 
     <div class="footer">
+        <p id="footer"> </p>
         
     </div>
 
