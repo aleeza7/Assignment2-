@@ -177,63 +177,73 @@
 
         document.getElementById("buttonOne").innerHTML = "myFirstVariable =" + myFirstVariable  ;
                  document.getElementById("footer").innerHTML = "Show A"; 
+                  document.getElementById("buttonOne").innerHTML = "A=" + myFirstVariable;
       }
   function showCountB() {
 
         document.getElementById("buttonFive").innerHTML = "mySecondVariable =" + mySecondtVariable  ;
         document.getElementById("footer").innerHTML = "Show B"; 
+        document.getElementById("buttonFive").innerHTML = "B=" + mySecondVariable;
       }
           function showCountC() {
 
         document.getElementById("buttonNine").innerHTML = "myThirdVariable =" + myThirdVariable  ;
               document.getElementById("footer").innerHTML = "Show C"; 
+               document.getElementById("buttonNine").innerHTML = "C=" + myThirdVariable;
       }
           
-}
+
       function mySecondFunction() {
           myFirstVariable = myFirstVariable + 1;
                    document.getElementById("footer").innerHTML = "Add One to A"; 
-      }
-
-      function myFourthFunction() {
-             myFirstVariable = myFirstVariable * 10  ;
-           document.getElementById("footer").innerHTML = "Add Ten to A"; 
+                      document.getElementById("buttonTwo").innerHTML = "A =" + myFirstVariable; 
       }
         function myThirdFunction() {
                  myFirstVariable = myFirstVariable + 1;
              mySecondVariable = mySecondVariable + 1;
              myThirdVariable = myThirdVariable + 1;
                     document.getElementById("footer").innerHTML = "Increment All Numbers"; 
+                document.getElementById("buttonThree").innerHTML = "A=" + myFirstVariable + "B=" + mySecondVariable + "C="  + myThirdVariable;
         }
+      function myFourthFunction() {
+             myFirstVariable = myFirstVariable + 10  ;
+           document.getElementById("footer").innerHTML = "Add Ten to A"; 
+          document.getElementById("buttonFour").innerHTML = "A =" + myFirstVariable; 
+      }
+
       function mySixthFunction() {
              mySecondVariable = mySecondVariable + 1  ;
             document.getElementById("footer").innerHTML = "Add One to B"; 
+          document.getElementById("buttonSix").innerHTML = "B=" + mySecondVariable ;
       }
         function myTenthFunction() {
              myThirdVariable = myThirdVariable + 1  ;
-              document.getElementById("footer").innerHTML = "Add One To C"; 
+              document.getElementById("footer").innerHTML = "Add One To C";
+            document.getElementById("buttonTen").innerHTML = "C=" + myThirdVariable;
       }
         function mySeventhFunction() {
              mySecondVariable = mySecondhVariable * 2  ;
              myThirdVariable = myThirdVariable * 2 ;
               myFirstVariable = myFirstVariable * 2 ;
-              document.getElementById("footer").innerHTML = "Double All Numbers"; 
-            
+                 document.getElementById("buttonSeven").innerHTML = "A=" + myFirstVariable + "B=" + mySecondVariable + "C=" + myThirdVariable;
       }
         function myEigthFunction() {
                  mySecondVariable = 0  ;
              myThirdVariable = 0 ;
               myFirstVariable = 0 ;
               document.getElementById("footer").innerHTML = "Reset All Numbers"; 
+             document.getElementById("buttonEight").innerHTML = "A=" + myFirstVariable + "B=" + mySecondVariable + "C=" + myThirdVariable ;
         }
         function myEleventhFunction() {
              myThirdVariable = myThirdVariable / 2 ;
               mySecondVariable = mySecondVariable / 2 ;
               myFirstVariable = myFirstVariable / 2 ;
               document.getElementById("footer").innerHTML = "Halve All Numbers"; 
+             document.getElementById("buttonEleven").innerHTML = "A=" + myFirstVariable + "B=" + mySecondVariable + "C=" +  myThirdVariable ;
         } 
             function myTwelfthFunction() {
                 document.getElementById("footer").innerHTML = "Add Specific Amount To C"; 
+                 document.getElementById("buttonTwelve").innerHTML = "A=" + myFirstVariable + "B=" + mySecondVariable + "C="+  myThirdVariable ;
       }
  
         
@@ -320,7 +330,7 @@
 
     </div>
     <div class="button9" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button  class="displayButton" button id= "buttonEleven" onclick= "showCountC()";> Show C
+        <button  class="displayButton" button id= "buttonNine" onclick= "showCountC()";> Show C
 
 
         </button>
