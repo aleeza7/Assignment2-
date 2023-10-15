@@ -172,6 +172,7 @@
   var myFirstVariable = 0;
   var mySecondVariable = 0;
   var myThirdVariable = 0;
+   var myFourthVariable = 1;
 
       function showCountA() {
 
@@ -181,7 +182,7 @@
       }
   function showCountB() {
 
-        document.getElementById("buttonFive").innerHTML = "mySecondVariable =" + mySecondtVariable  ;
+        document.getElementById("buttonFive").innerHTML = "mySecondVariable =" + mySecondVariable  ;
         document.getElementById("footer").innerHTML = "Show B"; 
         document.getElementById("buttonFive").innerHTML = "B=" + mySecondVariable;
       }
@@ -195,57 +196,64 @@
 
       function mySecondFunction() {
           myFirstVariable = myFirstVariable + 1;
-                   document.getElementById("footer").innerHTML = "Add One to A"; 
-                      document.getElementById("buttonTwo").innerHTML = "A =" + myFirstVariable; 
+                   document.getElementById("footer").innerHTML = "Added One to A"; 
+                 
       }
         function myThirdFunction() {
                  myFirstVariable = myFirstVariable + 1;
              mySecondVariable = mySecondVariable + 1;
-             myThirdVariable = myThirdVariable + 1;
-                    document.getElementById("footer").innerHTML = "Increment All Numbers"; 
-                document.getElementById("buttonThree").innerHTML = "A=" + myFirstVariable + "B=" + mySecondVariable + "C="  + myThirdVariable;
+            myThirdVariable = myThirdVariable + 1;
+                    document.getElementById("footer").innerHTML = "Incremented All Numbers by 1; 
+        
         }
       function myFourthFunction() {
              myFirstVariable = myFirstVariable + 10  ;
            document.getElementById("footer").innerHTML = "Add Ten to A"; 
-          document.getElementById("buttonFour").innerHTML = "A =" + myFirstVariable; 
+          
       }
 
       function mySixthFunction() {
              mySecondVariable = mySecondVariable + 1  ;
             document.getElementById("footer").innerHTML = "Add One to B"; 
-          document.getElementById("buttonSix").innerHTML = "B=" + mySecondVariable ;
+       
       }
         function myTenthFunction() {
              myThirdVariable = myThirdVariable + 1  ;
               document.getElementById("footer").innerHTML = "Add One To C";
-            document.getElementById("buttonTen").innerHTML = "C=" + myThirdVariable;
+           
       }
         function mySeventhFunction() {
-             mySecondVariable = mySecondhVariable * 2  ;
+              mySecondVariable = mySecondVariable * 2  ;
              myThirdVariable = myThirdVariable * 2 ;
               myFirstVariable = myFirstVariable * 2 ;
-                 document.getElementById("buttonSeven").innerHTML = "A=" + myFirstVariable + "B=" + mySecondVariable + "C=" + myThirdVariable;
+                  document.getElementById("footer").innerHTML = "Double All;
       }
         function myEigthFunction() {
                  mySecondVariable = 0  ;
              myThirdVariable = 0 ;
               myFirstVariable = 0 ;
+              myFourthVariable = 0 ;
               document.getElementById("footer").innerHTML = "Reset All Numbers"; 
-             document.getElementById("buttonEight").innerHTML = "A=" + myFirstVariable + "B=" + mySecondVariable + "C=" + myThirdVariable ;
+            
         }
         function myEleventhFunction() {
              myThirdVariable = myThirdVariable / 2 ;
               mySecondVariable = mySecondVariable / 2 ;
               myFirstVariable = myFirstVariable / 2 ;
               document.getElementById("footer").innerHTML = "Halve All Numbers"; 
-             document.getElementById("buttonEleven").innerHTML = "A=" + myFirstVariable + "B=" + mySecondVariable + "C=" +  myThirdVariable ;
+          
         } 
             function myTwelfthFunction() {
-                document.getElementById("footer").innerHTML = "Add Specific Amount To C"; 
-                 document.getElementById("buttonTwelve").innerHTML = "A=" + myFirstVariable + "B=" + mySecondVariable + "C="+  myThirdVariable ;
+                document.getElementById("footer").innerHTML = "Added" + myFourthVariable + "To C"; 
+                myThirdvariable= myFourthVariable; }
+                
+                 
+                function Footer() {
+            document.getElementById("footer").innerHTML = "Increased C by " + myFourthVariable; 
+            myFourthVariable = myFourthVariable + 1;
+
       }
- 
+
         
     </script>
 </head>
@@ -269,7 +277,7 @@
 
 
     <div class="button1"  onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-       <button class="displayButton" button id="button1" onclick= "showCountA()";> Show A
+       <button class="displayButton" id="buttonOne" onclick= "showCountA()";> Show A
            
         
        
@@ -357,8 +365,10 @@
 
     </div>
 
-    <div class="footer">
-        <p id="footer"> </p>
+    <div class="footer"> 
+         <button id="footer" class="displayButton" onclick="Footer();" > 
+             <p id = "footer">
+         </p>
         
     </div>
 
@@ -367,3 +377,4 @@
 
 
 </html>
+
