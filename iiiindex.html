@@ -29,7 +29,7 @@
          button {
            width: 95%;
            height: 95%;
-
+            font-size: 25px
     
          }
 
@@ -176,21 +176,24 @@
 
       function showCountA() {
 
-        document.getElementById("buttonOne").innerHTML = "myFirstVariable =" + myFirstVariable  ;
+       
                  document.getElementById("footer").innerHTML = "Show A"; 
                   document.getElementById("buttonOne").innerHTML = "A=" + myFirstVariable;
+          document.getElementById("cc").innerHTML = "A=" + MyFirstVariable; 
       }
   function showCountB() {
 
-        document.getElementById("buttonFive").innerHTML = "mySecondVariable =" + mySecondVariable  ;
+       
         document.getElementById("footer").innerHTML = "Show B"; 
         document.getElementById("buttonFive").innerHTML = "B=" + mySecondVariable;
+        document.getElementById("cc").innerHTML = "B=" + MySecondVariable;
       }
           function showCountC() {
 
-        document.getElementById("buttonNine").innerHTML = "myThirdVariable =" + myThirdVariable  ;
+        
               document.getElementById("footer").innerHTML = "Show C"; 
-               document.getElementById("buttonNine").innerHTML = "C=" + myThirdVariable;
+                      document.getElementById("buttonNine").innerHTML = "C=" + myThirdVariable
+                document.getElementById("cc").innerHTML = "C=" + MyThirdVariable;
       }
           
 
@@ -244,8 +247,9 @@
           
         } 
             function myTwelfthFunction() {
+                     myThirdvariable= myThirdvariable + myFourthVariable; 
                   document.getElementById("footer").innerHTML = "Click here to customize C"
-                myThirdvariable= myThirdvariable + myFourthVariable; 
+           
             }
                 
                  
@@ -270,8 +274,9 @@
 
 
 
-    <div class="informationDisplay">
+    <div id = "cc" class="informationDisplay">
         Use the buttons below to activate the tracker!
+        
 
       
    </div>
@@ -340,7 +345,7 @@
 
     </div>
     <div class="button9" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-        <button  class="displayButton" button id= "buttonNine" onclick= "showCountC()";> Show C
+        <button  class="displayButton"  id= "buttonNine" onclick= "showCountC()";> Show C
 
 
         </button>
