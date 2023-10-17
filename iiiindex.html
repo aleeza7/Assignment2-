@@ -240,25 +240,22 @@
             
         }
         function myEleventhFunction() {
-             myThirdVariable = myThirdVariable / 2 ;
-              mySecondVariable = mySecondVariable / 2 ;
-              myFirstVariable = myFirstVariable / 2 ;
+             myThirdVariable = math.round (myThirdVariable/2);
+              mySecondVariable = math.round (mySecondVariable/2);
+              myFirstVariable = math.round (myFirstVariable/2);
               document.getElementById("footer").innerHTML = "Halve All Numbers"; 
           
         } 
             function myTwelfthFunction() {
-                     myThirdvariable= myThirdvariable + myFourthVariable; 
-                  document.getElementById("footer").innerHTML = "Click here to customize C"
+                   
+                  document.getElementById("footer").innerHTML = "C has been increased by" + C
+                        C = C + document.GetElementById(cIncrementValue").value);
            
             }
-                
-                 
-                function Footer() {
-                    myFourthVariable = myFourthVariable + 1;
-            document.getElementById("footer").innerHTML = "Increased C by " + myFourthVariable; 
-            
 
-      }
+         function Footer() 
+                 
+     
 
         
     </script>
@@ -365,17 +362,19 @@
 
     </div>
     <div class="button12" onmouseenter = "this.style='border: 3px solid #0088aa;';" onmouseleave = "this.style='border: 3px solid #000000;';" >
-     <button id= "buttonTwelve" onclick ="myTwelfthFunction();"> Customize C
+     <button id= "buttonTwelve" onclick ="MyTwelfthFunction();"> Customize C
 
 
         </button>
 
     </div>
 
-    <div class="footer"> 
-               <button id="footer" class="displayButton" onclick="Footer();" >
-             <p id = "footer">
-         </p>
+    <div class="footer" style= "font-size: 20px;"> 
+        <button id = "footer">
+    Click here to Customize C Value
+        <input id="cIncrementValue">  </input>
+        
+    
         
     </div>
 
