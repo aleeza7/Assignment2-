@@ -173,8 +173,7 @@
   var myFirstVariable = 0;
   var mySecondVariable = 0;
   var myThirdVariable = 0;
-   var myFourthVariable = 1;
-        var myFifthVariable = 0
+   var myFourthVariable = 0;
 
       function showCountA() {
 
@@ -252,14 +251,14 @@
              
                                 myThirdVariable = myThirdVariable + myFourthVariable; 
          document.getElementById("footer").innerHTML = "Click here to increase C by a custom number!";
-         document.getElementById("cc").innerHTML = "Click the C Button to Add"; 
+         document.getElementById("cc").innerHTML = "Customizing C"; 
 
             }
 
-               function showFooter() {
-            document.getElementById("footer").innerHTML = "Increase c by " + myFifthVariable; 
-            myFifthVariable = myFifthVariable + 1; 
-            document.getElementById("cc").innerHTML = "Click the C Button to Add"; 
+               function Footer() {
+            document.getElementById("footer").innerHTML = "Increase c by " + myFourthVariable; 
+            myFourthVariable = myFourthVariable + 1; 
+            document.getElementById("cc").innerHTML = "Click Customize C to Add"; 
 
         }
     
@@ -381,7 +380,7 @@
     </div>
 
     <div class="footer" style= "font-size: 20px;"> 
-        <button id = "footer" onclick ="showFooter();" >
+        <button id = "footer" onclick ="Footer();" >
   
    
     
